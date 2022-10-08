@@ -140,9 +140,9 @@
         if(!empty($successPost)){
             echo $successPost."<br>";
         }
-        $dsn = 'mysql:dbname=tb220336db;host=localhost';
-        $user = "tb-220336";
-        $password = "7dkcz7zwAf";
+        $dsn = 'www';
+        $user = "tb";
+        $password = "password";
         $pdo = new PDO($dsn, $user, $password, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING));
         $sql = "SELECT * FROM thread";
         $stmt = $pdo -> query($sql);
